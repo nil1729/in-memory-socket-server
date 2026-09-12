@@ -13,7 +13,7 @@ jobs:
       - name: Use Node.js 14.15.5
         uses: actions/setup-node@v1
         with:
-          node-version: 14.15.5
+          node-version: 24.21.0
       - run: npm run setup:frontend
       - run: npm run build:frontend --if-present
       - name: Deploy to netlify
